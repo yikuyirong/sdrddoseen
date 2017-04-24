@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{00000000-0000-0000-0000-000000000002}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebBLLModels</RootNamespace>
+    <AssemblyName>WebBLLModels</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tbl_AlertManager.cs" />
+    <Compile Include="Tbl_ClassManager.cs" />
+    <Compile Include="Tbl_DesignChangeManager.cs" />
+    <Compile Include="Tbl_DesignCorrectManager.cs" />
+    <Compile Include="Tbl_DesignVersionManager.cs" />
+    <Compile Include="Tbl_DiskManager.cs" />
+    <Compile Include="Tbl_FlowWorkLogManager.cs" />
+    <Compile Include="Tbl_FlowManager.cs" />
+    <Compile Include="Tbl_FlowNodeManager.cs" />
+    <Compile Include="Tbl_FlowNodeTaskManager.cs" />
+    <Compile Include="Tbl_GbookManager.cs" />
+    <Compile Include="Tbl_InfoManager.cs" />
+    <Compile Include="Tbl_FlowFormManager.cs" />
+    <Compile Include="Tbl_FlowFormWordManager.cs" />
+    <Compile Include="Tbl_LimitManager.cs" />
+    <Compile Include="Tbl_LogManager.cs" />
+    <Compile Include="Tbl_MessageManager.cs" />
+    <Compile Include="Tbl_OtherWorkManager.cs" />
+    <Compile Include="Tbl_OutFileManager.cs" />
+    <Compile Include="Tbl_PageManager.cs" />
+    <Compile Include="Tbl_PlanManageManager.cs" />
+    <Compile Include="Tbl_ProjectArchiveManager.cs" />
+    <Compile Include="Tbl_ProjectArchiveRequestManager.cs" />
+    <Compile Include="Tbl_ProjectArchiveVersionManager.cs" />
+    <Compile Include="Tbl_ProjectBidManager.cs" />
+    <Compile Include="Tbl_ProjectBuilderContractManager.cs" />
+    <Compile Include="Tbl_ProjectBuilderContractPayManager.cs" />
+    <Compile Include="Tbl_ProjectBuilderManager.cs" />
+    <Compile Include="Tbl_ProjectBuyAcountManager.cs" />
+    <Compile Include="Tbl_ProjectBuyContractManager.cs" />
+    <Compile Include="Tbl_ProjectBuyContractPayManager.cs" />
+    <Compile Include="Tbl_ProjectContractManager.cs" />
+    <Compile Include="Tbl_ProjectContractPayManager.cs" />
+    <Compile Include="Tbl_ProjectDocumentManager.cs" />
+    <Compile Include="Tbl_ProjectManager.cs" />
+    <Compile Include="Tbl_ProjectOuterCompanyManager.cs" />
+    <Compile Include="Tbl_ProjectOuterDesignManager.cs" />
+    <Compile Include="Tbl_ProjectOuterManager.cs" />
+    <Compile Include="Tbl_UserManager.cs" />
+    <Compile Include="Tbl_ConfigManager.cs" />
+    <Compile Include="Tbl_FlowWorkManager.cs" />
+    <Compile Include="Tbl_DesignTaskManager.cs" />
+    <Compile Include="Tbl_ProjectDesignerManager.cs" />
+    <Compile Include="Tbl_DesignVolumeManager.cs" />
+    <Compile Include="Tbl_ProjectOuterPayManager.cs" />
+    <Compile Include="Tbl_ProjectBuilderLogManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebCommon\WebCommon.csproj">
+      <Project>{6B62ADE7-4FA1-47B3-99D4-1A052B8F676B}</Project>
+      <Name>WebCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebDAL\WebDAL.csproj">
+      <Project>{00000000-0000-0000-0000-000000000003}</Project>
+      <Name>WebDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebModels\WebModels.csproj">
+      <Project>{00000000-0000-0000-0000-000000000004}</Project>
+      <Name>WebModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

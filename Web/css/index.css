@@ -1,0 +1,23 @@
+﻿.top img{ margin-left:16px;}
+.top{ background:url(../images/menu_bg1.jpg) repeat-x;}
+.sousuo select{ margin-left:4px;}
+.dis{display:block}
+.undis {display:none}
+#cntR {width:100%;height:170px;margin-top:15px}
+#NewsTop P{float:left;display:inline;width:72px;height:24px;line-height:24px;margin-left:10px}
+#NewsTop P.tops0{text-align:center;background:#0096da;border:1px solid #0673a3;border-radius:2px;color:#fff}
+#NewsTop P.topC0{cursor:pointer;border:1px solid #ccc;border-radius:2px;text-align:center}
+#NewsTop P.topC1{width:83px;height:24px;background:#009adf}
+#NewsTop #NewsTop_tit{height:24px}
+#NewsTop #NewsTop_cnt{float:left;display:inline;height:140px;width:100%;overflow-x:hidden;margin-top:10px;scrollbar-face-color:#333;scrollbar-shadow-color: #808080;scrollbar-highlight-color: #333333;scrollbar-3dlight-color:#808080;scrollbar-darkshadow-color:#333;scrollbar-track-color:#868686;scrollbar-arrow-color:#fff;position:relative}
+#NewsTop #NewsTop_cnt a{color:#666;text-decoration:none;padding:7px}
+.xiangxi{height:140px;padding:0 20px}
+ul.xiangxi li{float:left;display:inline;height:24px;width:140px;line-height:24px}
+.ser{margin-right:15px}
+.gz-right{position:absolute;right:0;top:-46px;width:50%;height:160px;border-left:1px solid #ccc}
+.gz-right h1{margin:0 15px;margin-top:5px;padding:10px 5px;border-bottom:1px solid #ccc;color:#333}
+.gz-right ul{margin-top:10px}
+.gz-right ul li{margin:0 15px;border-bottom:1px dashed #ccc}
+.gz-right ul li div.li-div{margin-top:5px;padding:0 5px;color:#999}
+.gz-right ul li div.li-div span{color:#333}
+.gz-right ul li div.li-div .span1{width:80px}
