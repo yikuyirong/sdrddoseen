@@ -1,0 +1,7 @@
+D:\wdwd\my_project\VS2017\SdrdDoseen\DoseenClient\obj\Debug\DoseenClient.csproj.GenerateResource.Cache
+D:\wdwd\my_project\VS2017\SdrdDoseen\DoseenClient\obj\Debug\Design_Client.Properties.Resources.resources
+D:\wdwd\my_project\VS2017\SdrdDoseen\DoseenClient\bin\Debug\DoseenClient.exe
+D:\wdwd\my_project\VS2017\SdrdDoseen\DoseenClient\bin\Debug\DoseenClient.pdb
+D:\wdwd\my_project\VS2017\SdrdDoseen\DoseenClient\obj\Debug\DoseenClient.exe
+D:\wdwd\my_project\VS2017\SdrdDoseen\DoseenClient\obj\Debug\DoseenClient.pdb
+D:\wdwd\my_project\VS2017\SdrdDoseen\DoseenClient\obj\Debug\DoseenClient.csprojResolveAssemblyReference.cache

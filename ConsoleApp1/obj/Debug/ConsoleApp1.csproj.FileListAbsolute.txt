@@ -1,0 +1,14 @@
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\WebCommon.dll
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\System.Web.Script.Serialization.dll
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\Yahoo.Yui.Compressor.dll
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\WebModelsModels.dll
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\WebDALModels.dll
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\WebCommon.pdb
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\WebModelsModels.pdb
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\bin\Debug\WebDALModels.pdb
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\wdwd\my_project\VS2017\SdrdDoseen\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

@@ -19,12 +19,17 @@ namespace Web.views
         {
             try
             {
+                /*
                 //非授权限制
                 TimeSpan TS = DateTime.Now - Convert.ToDateTime("2017-03-25");
                 if (TS.Days > 3)
                 {
                     WebCommon.Script.ResponseScript("window.external.notify('敬告', '系统已过试用期请谨慎使用！', 'http://www.doseen.com', 1);");
                 }
+
+                */
+
+
                 //读取实时提醒消息
                 DataTable dt = WebBLL.Tbl_AlertManager.GetDataTableByPage(1, 1, "UserName='" + WebCommon.Public.GetUserName() + "' and status='未读'", "id desc");
                 foreach (DataRow dr in dt.Rows)

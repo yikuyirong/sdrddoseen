@@ -771,10 +771,10 @@ namespace WebCommon
             return result;
         }
 
-        public static int ToInt(string v)
-        {
-            return Public.ToInt(v);
-        }
+        //public static int ToInt(string v)
+        //{
+        //    return Public.ToInt(v);
+        //}
 
         public static string DataTableToJson(DataTable dt)
         {

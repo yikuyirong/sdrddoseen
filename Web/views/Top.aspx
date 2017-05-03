@@ -11,6 +11,43 @@
     <script type="text/javascript" src="../js/jquery-1.11.0.js"></script>
     <script src="../js/public.js" type="text/javascript"></script>
     <script type="text/javascript">
+
+
+        //判断是否支持createPopup
+
+        if (!window.createPopup) {
+            var __createPopup = function () {
+                var SetElementStyles = function (element, styleDict) {
+                    var style = element.style;
+                    for (var styleName in styleDict) style[styleName] = styleDict[styleName];
+                }
+                var eDiv = document.createElement('div');
+                SetElementStyles(eDiv, { 'position': 'absolute', 'top': 0 + 'px', 'left': 0 + 'px', 'width': 0 + 'px', 'height': 0 + 'px', 'zIndex': 1000, 'display': 'none', 'overflow': 'hidden' });
+                eDiv.body = eDiv;
+                var opened = false;
+                var setOpened = function (b) {
+                    opened = b;
+                }
+                var getOpened = function () {
+                    return opened;
+                }
+                var getCoordinates = function (oElement) {
+                    var coordinates = { x: 0, y: 0 };
+                    while (oElement) {
+                        coordinates.x += oElement.offsetLeft;
+                        coordinates.y += oElement.offsetTop;
+                        oElement = oElement.offsetParent;
+                    }
+                    return coordinates;
+                }
+                return { htmlTxt: '', document: eDiv, isOpen: getOpened(), isShow: false, hide: function () { SetElementStyles(eDiv, { 'top': 0 + 'px', 'left': 0 + 'px', 'width': 0 + 'px', 'height': 0 + 'px', 'display': 'none' }); eDiv.innerHTML = ''; this.isShow = false; }, show: function (iX, iY, iWidth, iHeight, oElement) { if (!getOpened()) { document.body.appendChild(eDiv); setOpened(true); }; this.htmlTxt = eDiv.innerHTML; if (this.isShow) { this.hide(); }; eDiv.innerHTML = this.htmlTxt; var coordinates = getCoordinates(oElement); eDiv.style.top = (iX + coordinates.x) + 'px'; eDiv.style.left = (iY + coordinates.y) + 'px'; eDiv.style.width = iWidth + 'px'; eDiv.style.height = iHeight + 'px'; eDiv.style.display = 'block'; this.isShow = true; } }
+            }
+            window.createPopup = function () {
+                return __createPopup();
+            }
+        } 
+
+
         var oPopup = window.createPopup();
         var oPopTempStr = "<div style='width:90px;background:url(../images/index-menu-it-bg.png) left top no-repeat'>\
         <ul style='background:url(../images/index-menu-ib-bg.png) left top no-repeat;margin-top:15px;margin-left:0px;padding-bottom:10px'></ul><div style='margin-top:-19px;height:10px;background:url(../images/index-menu-ib-bgb.png) no-repeat'></div>\</div>";
@@ -36,7 +73,13 @@
                 var menuIndex = $(this).index() + 1;
                 $(this).find("img").attr("src", "../images/menu" + menuIndex + "_.png");
                 var htmlStr = $(this).find(".index-submenu ul").html();
-                oPopup.document.body.childNodes(0).childNodes(0).innerHTML = htmlStr;
+
+                //oPopup.document.body.childNodes(0).childNodes(0).innerHTML = htmlStr;
+
+                var aa = oPopup.document.body.childNodes(0).childNodes(0);
+
+                aa.innerHTML = htmlStr;
+
                 var htmlheight = oPopup.document.body.childNodes(0).offsetHeight - 13;
                 oPopup.show(-8, 75, 90, htmlheight, this); //这里的-8是子菜单向右移动多少PX，75是子菜单向下移动多少px
                 if (htmlStr == "") oPopup.hide();
